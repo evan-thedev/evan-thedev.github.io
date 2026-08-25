@@ -21,6 +21,7 @@ No package manager. No build step.
 - Also: hardware diagnostics, schematics, soldering from technician roles. No SQL, cloud, Docker, GCP, Java, or JS frameworks.
 - Education: high school diploma, Plano East Senior High School, Plano, TX, 2017. No college.
 - Work history: WCCTV, Strike + Reel, Hope Montgomery Industries (UAT Tester, not software engineer), RaceTrac Petroleum.
+- Public projects on the site: this portfolio, Kalshi Cursor plugin (https://github.com/evan-thedev/kalshi), ShieldAI landing (https://github.com/evan-thedev/shieldai-landing, live https://shieldai-landing.vercel.app). Do not add gambling repos or Treehouse classwork.
 - U.S. citizen, authorized to work for any employer. Willing to relocate anywhere.
 
 ## Open Graph when hosted

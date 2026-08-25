@@ -594,6 +594,13 @@ h2 {
   border-top: 1px solid var(--line-faint);
 }
 
+.projects-next {
+  margin: 1.35rem 0 0;
+  max-width: 44rem;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
 /* Contact */
 .contact { background: linear-gradient(180deg, transparent, color-mix(in srgb, var(--copper) 5%, transparent)); }
 .contact-panel {
