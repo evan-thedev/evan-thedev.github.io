@@ -33,3 +33,5 @@ og:url and og:image point at https://evan-thedev.github.io/ once GitHub Pages is
 - index.html, css/styles.css, js/main.js
 - assets/favicon.svg, assets/og-image.png, preview-hero.png
 
+
+Freelance offer page: https://evan-thedev.github.io/freelance/
