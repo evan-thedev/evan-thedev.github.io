@@ -1,20 +1,20 @@
 /* Evan Parrott — wizards at work
-   Void, brass, and a little spell-light. Not a cartoon hat shop. */
+   Void, neon green spell-light. Not a cartoon hat shop. */
 
 :root {
-  --ink: #0c0814;
-  --charcoal: #16111f;
-  --panel: #1e1828;
-  --panel-2: #2a2236;
-  --line: rgba(212, 160, 84, 0.34);
-  --line-faint: rgba(243, 234, 214, 0.09);
-  --copper: #d4a054;
-  --copper-bright: #f0c878;
-  --copper-dim: #8a6a32;
-  --arcane: #8b7cc8;
-  --paper: #f3ead6;
-  --muted: #b0a4c2;
-  --led: #d4a054;
+  --ink: #070b08;
+  --charcoal: #0d1610;
+  --panel: #122016;
+  --panel-2: #1a2c1f;
+  --line: rgba(61, 255, 110, 0.38);
+  --line-faint: rgba(200, 255, 210, 0.1);
+  --copper: #3dff6e;
+  --copper-bright: #9dffb8;
+  --copper-dim: #1a8a3e;
+  --arcane: #3dff6e;
+  --paper: #e9ffe9;
+  --muted: #8fb89a;
+  --led: #3dff6e;
   --radius: 2px;
   --header-h: 4.25rem;
   --max: 72rem;
@@ -48,9 +48,9 @@ body {
   color: var(--paper);
   background-color: var(--ink);
   background-image:
-    radial-gradient(ellipse 90% 55% at 50% -8%, rgba(139, 124, 200, 0.22), transparent 58%),
-    radial-gradient(ellipse 45% 35% at 100% 80%, rgba(212, 160, 84, 0.1), transparent 55%),
-    radial-gradient(rgba(240, 200, 120, 0.1) 1px, transparent 1px);
+    radial-gradient(ellipse 90% 55% at 50% -8%, rgba(61, 255, 110, 0.16), transparent 58%),
+    radial-gradient(ellipse 45% 35% at 100% 80%, rgba(61, 255, 110, 0.08), transparent 55%),
+    radial-gradient(rgba(61, 255, 110, 0.12) 1px, transparent 1px);
   background-size: auto, auto, 22px 22px;
   background-attachment: fixed;
 }
