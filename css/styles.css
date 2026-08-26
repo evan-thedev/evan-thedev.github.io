@@ -606,6 +606,11 @@ h2 {
   color: var(--muted) !important;
   border-top: 1px solid var(--line-faint);
 }
+.project-note code {
+  font-family: var(--mono);
+  font-size: 0.82em;
+  color: var(--copper-bright);
+}
 
 .projects-next {
   margin: 1.35rem 0 0;
