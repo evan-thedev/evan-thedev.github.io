@@ -14,7 +14,7 @@ No package manager. No build step.
 
 ## Copy notes (keep honest)
 
-- Public contact is coppercoffin@gmail.com only, via mailto. Do not add a phone number.
+- Public contact is kingwarp21@gmail.com only, via mailto. Do not add a phone number.
 - GitHub: https://github.com/evan-thedev  Live site: https://evan-thedev.github.io/
 - Do not invent LinkedIn or other live-demo URLs. Omit them until they exist.
 - Skills claimed: self-taught Python and C#; testing/UAT; debugging; AI-assisted development as a learning tool.
