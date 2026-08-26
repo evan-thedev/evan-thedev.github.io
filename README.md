@@ -14,9 +14,9 @@ No package manager. No build step.
 
 ## Copy notes (keep honest)
 
-- Public contact is kingwarp21@gmail.com only, via mailto. Do not add a phone number.
+- Public contact: kingwarp21@gmail.com (mailto). LinkedIn: https://www.linkedin.com/in/evan-parrott-619191233. Do not add a phone number.
 - GitHub: https://github.com/evan-thedev  Live site: https://evan-thedev.github.io/
-- Do not invent LinkedIn or other live-demo URLs. Omit them until they exist.
+- LinkedIn: https://www.linkedin.com/in/evan-parrott-619191233. Do not invent other socials.
 - Skills claimed: self-taught Python and C#; testing/UAT; debugging; AI-assisted development as a learning tool.
 - Also: hardware diagnostics, schematics, soldering from technician roles. No SQL, cloud, Docker, GCP, Java, or JS frameworks.
 - Education: high school diploma, Plano East Senior High School, Plano, TX, 2017. No college.
