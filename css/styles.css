@@ -242,52 +242,86 @@ h1 {
 
 .work-item {
   background: var(--white);
-  min-height: 16rem;
 }
 
-.work-link {
+.work-tile {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   min-height: 100%;
-  padding: 2rem;
   transition: background 0.2s var(--ease);
 }
 
-.work-link:hover {
+.work-tile:hover {
   background: var(--off-white);
 }
 
-.work-item h3 {
-  margin: 0 0 0.5rem;
-  font-size: 1.5rem;
+.work-tile-label {
+  padding: 1.5rem 2rem 1rem;
+}
+
+.work-tile-label h3 {
+  margin: 0 0 0.25rem;
+  font-size: 1.125rem;
   font-weight: 500;
   letter-spacing: -0.01em;
 }
 
-.work-item p {
+.work-tile-label p {
   margin: 0;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   color: var(--gray-600);
 }
 
-.work-item-actions {
+.work-tile-visual {
+  flex: 1;
+  min-height: 14rem;
   display: flex;
-  gap: 0.75rem;
-  margin-top: 1.5rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid var(--gray-800);
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.work-tile-typo {
+  background: var(--off-white);
+  border-top: 1px solid var(--black);
+}
+
+.work-typo-text {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: var(--gray-800);
+}
+
+.work-tile-live {
+  background: linear-gradient(135deg, var(--off-white) 0%, var(--white) 100%);
+  border-top: 1px solid var(--black);
+}
+
+.work-live-badge {
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--gray-600);
+}
+
+.work-tile-actions {
+  display: flex;
+  gap: 1px;
+  background: var(--black);
+  border-top: 1px solid var(--black);
 }
 
 .work-btn {
+  flex: 1;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   min-height: 44px;
-  padding: 0.625rem 1.25rem;
+  padding: 0.875rem 1.25rem;
   font-size: 0.9375rem;
   font-weight: 500;
-  border: 1px solid var(--black);
   transition: background 0.2s var(--ease), color 0.2s;
 }
 
@@ -301,7 +335,7 @@ h1 {
 }
 
 .work-btn-secondary {
-  background: transparent;
+  background: var(--white);
   color: var(--black);
 }
 
