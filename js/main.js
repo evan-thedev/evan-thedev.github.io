@@ -1,13 +1,11 @@
-/* Nav, scroll spy, reduced-motion reveals, year. */
+/* Nav toggle and utilities */
 (function () {
   "use strict";
 
-  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  const header = document.querySelector(".site-header");
   const toggle = document.querySelector(".nav-toggle");
   const nav = document.querySelector("#site-nav");
   const yearEl = document.querySelector("#year");
-  const sectionIds = ["about", "skills", "experience", "projects", "contact"];
+  const navLinks = document.querySelectorAll('.site-nav a[href^="#"]');
 
   if (yearEl) {
     yearEl.textContent = String(new Date().getFullYear());
@@ -26,7 +24,7 @@
       setNavOpen(toggle.getAttribute("aria-expanded") !== "true");
     });
 
-    nav.querySelectorAll("a").forEach(function (link) {
+    navLinks.forEach(function (link) {
       link.addEventListener("click", function () {
         setNavOpen(false);
       });
@@ -41,47 +39,29 @@
     });
   }
 
-  const navLinks = Array.from(document.querySelectorAll('.site-nav a[href^="#"]'));
-
-  function setCurrent(id) {
-    navLinks.forEach(function (link) {
-      const match = link.getAttribute("href") === "#" + id;
-      if (match) link.setAttribute("aria-current", "location");
-      else link.removeAttribute("aria-current");
-    });
-  }
-
-  function updateSpy() {
-    const offset = (header ? header.offsetHeight : 68) + 24;
+  function updateNavCurrent() {
+    const sections = ["about", "experience", "contact"];
     let current = null;
-    sectionIds.forEach(function (id) {
+
+    sections.forEach(function (id) {
       const el = document.getElementById(id);
       if (!el) return;
       const top = el.getBoundingClientRect().top;
-      if (top - offset <= 0) current = id;
+      if (top - 100 <= 0) current = id;
     });
-    if (window.scrollY < 80) current = null;
-    setCurrent(current);
-  }
 
-  window.addEventListener("scroll", updateSpy, { passive: true });
-  updateSpy();
+    if (window.scrollY < 100) current = null;
 
-  if (!reduceMotion && "IntersectionObserver" in window) {
-    const targets = document.querySelectorAll(".section, .hero-inner, .project, .skill-card");
-    const io = new IntersectionObserver(
-      function (entries) {
-        entries.forEach(function (entry) {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("reveal");
-            io.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.12, rootMargin: "0px 0px -8% 0px" }
-    );
-    targets.forEach(function (el) {
-      io.observe(el);
+    navLinks.forEach(function (link) {
+      const href = link.getAttribute("href");
+      if (href && href.startsWith("#")) {
+        const match = href === "#" + current;
+        if (match) link.setAttribute("aria-current", "location");
+        else link.removeAttribute("aria-current");
+      }
     });
   }
+
+  window.addEventListener("scroll", updateNavCurrent, { passive: true });
+  updateNavCurrent();
 })();
