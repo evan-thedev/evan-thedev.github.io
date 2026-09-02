@@ -238,7 +238,7 @@ a {
   margin-inline: auto;
   padding-inline: var(--gutter);
   position: relative;
-  z-index: 2;
+  z-index: 5;
 }
 
 .hero-date {
@@ -258,6 +258,11 @@ h1 {
   line-height: 1.1;
   letter-spacing: -0.02em;
   color: var(--ink);
+}
+
+#hero-name {
+  position: relative;
+  z-index: 5;
 }
 
 .hero-line {
@@ -687,7 +692,7 @@ h2 {
 .ink-illustration {
   position: absolute;
   pointer-events: none;
-  z-index: 1;
+  z-index: 0;
   opacity: 0.85;
   will-change: transform;
 }
@@ -701,52 +706,54 @@ h2 {
 .ink-bolt {
   width: clamp(3rem, 8vw, 6rem);
   height: auto;
+  max-width: min(4.5rem, 8vw);
 }
 
 .ink-skull {
   width: clamp(4rem, 10vw, 7rem);
   height: auto;
+  max-width: min(4.5rem, 8vw);
 }
 
 .ink-bolt-1 {
-  top: 10%;
-  right: 15%;
-  left: auto;
+  top: 8%;
+  right: clamp(0.5rem, 2vw, 1.5rem);
+  left: auto !important;
   transform: rotate(-12deg);
 }
 
 .ink-bolt-2 {
-  top: 48%;
-  right: 8%;
-  left: auto;
+  top: 32%;
+  right: clamp(0.5rem, 2vw, 1.5rem);
+  left: auto !important;
   transform: rotate(8deg);
 }
 
 .ink-bolt-3 {
-  bottom: 18%;
-  right: 20%;
-  left: auto;
+  top: 56%;
+  right: clamp(0.5rem, 2vw, 1.5rem);
+  left: auto !important;
   transform: rotate(-15deg);
 }
 
 .ink-skull-1 {
-  top: 28%;
-  right: 5%;
-  left: auto;
+  top: 20%;
+  right: clamp(0.5rem, 2vw, 1.5rem);
+  left: auto !important;
   transform: rotate(6deg);
 }
 
 .ink-skull-2 {
-  top: 68%;
-  right: 18%;
-  left: auto;
+  top: 44%;
+  right: clamp(0.5rem, 2vw, 1.5rem);
+  left: auto !important;
   transform: rotate(-8deg);
 }
 
 .ink-skull-3 {
-  bottom: 12%;
-  right: 12%;
-  left: auto;
+  top: 68%;
+  right: clamp(0.5rem, 2vw, 1.5rem);
+  left: auto !important;
   transform: rotate(4deg);
 }
 

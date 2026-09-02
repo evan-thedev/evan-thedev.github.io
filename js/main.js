@@ -81,8 +81,9 @@
         const direction = index % 2 === 0 ? 1 : -1;
         const yOffset = scrolled * speed * direction;
         const rotation = (scrolled * 0.02 * direction) % 360;
+        const xOffset = Math.max(0, Math.min(20, scrolled * 0.01));
         
-        el.style.transform = "translateY(" + yOffset + "px) rotate(" + rotation + "deg)";
+        el.style.transform = "translateY(" + yOffset + "px) translateX(" + xOffset + "px) rotate(" + rotation + "deg)";
       });
     }
 
