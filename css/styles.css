@@ -238,6 +238,7 @@ a {
   margin-inline: auto;
   padding-inline: var(--gutter);
   position: relative;
+  z-index: 2;
 }
 
 .hero-date {
@@ -708,38 +709,44 @@ h2 {
 }
 
 .ink-bolt-1 {
-  top: 15%;
-  right: 8%;
+  top: 10%;
+  right: 15%;
+  left: auto;
   transform: rotate(-12deg);
 }
 
 .ink-bolt-2 {
   top: 48%;
-  left: 4%;
+  right: 8%;
+  left: auto;
   transform: rotate(8deg);
 }
 
 .ink-bolt-3 {
   bottom: 18%;
-  right: 12%;
+  right: 20%;
+  left: auto;
   transform: rotate(-15deg);
 }
 
 .ink-skull-1 {
   top: 28%;
-  right: 3%;
+  right: 5%;
+  left: auto;
   transform: rotate(6deg);
 }
 
 .ink-skull-2 {
   top: 68%;
-  left: 6%;
+  right: 18%;
+  left: auto;
   transform: rotate(-8deg);
 }
 
 .ink-skull-3 {
   bottom: 12%;
-  left: 8%;
+  right: 12%;
+  left: auto;
   transform: rotate(4deg);
 }
 
@@ -813,6 +820,11 @@ h2 {
   
   .hero-line:not(:first-child) {
     font-size: clamp(1rem, 2.5vw, 1.25rem);
+  }
+  
+  .ink-illustration {
+    opacity: 0.5;
+    transform: scale(0.6) !important;
   }
 
   .nav-toggle {
